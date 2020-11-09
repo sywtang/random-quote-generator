@@ -48,25 +48,7 @@ function App() {
   const [quote, setQuote] = useState(quotes[randomIndex]);
   const [colour, setColour] = useState("red");
 
-  //let currentIndex = quotes.length;
-  //let tempValue = "";
-  //let random = 0;
-
   const handleClick = () => {
-    // Fisher Yates shuffle
-    //let random = Math.floor(Math.random() * currentIndex);
-    //while (0 !== currentIndex) {
-    //random = Math.floor(Math.random() * currentIndex);
-    //currentIndex -= 1;
-    //tempValue = quotes[currentIndex];
-    //quotes[currentIndex] = quotes[random];
-    //quotes[random] = tempValue;
-    //setQuote(quotes[random]);
-    //console.log(tempValue, "tempValue");
-    //console.log(random);
-    //break;
-    //}
-
     // Durstenfeld shuffle
     for (let i = quotes.length - 1; i > 0; i--) {
       // pick next item in array
